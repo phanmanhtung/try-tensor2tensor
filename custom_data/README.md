@@ -62,3 +62,6 @@ Original instruction [here](https://github.com/tensorflow/tensor2tensor/blob/mas
 ## Using Customized Dataset
 Now we want to use another dataset for this translator. The only thing to do is creating a new folder called usr and add a flag __--t2t_usr_di=usr_dir__ for **t2t-datagen**, **t2t-trainer** and **t2t-decoder** command. Inside usr dir, there are two file, the main one is [__mycustomized.py__](https://github.com/linhhonblade/try-tensor2tensor/blob/master/custom_data/usr_example/my_customized.py) which register a new problem name __translate_envi_customized__ with our own dataset. Source code for training with customized data is in [this drive](https://drive.google.com/drive/folders/1NBh7bwgI1vAhaUKJuDisXAqDOhrgHg1J?usp=sharing)
 For more instruction, please see [this](https://github.com/tensorflow/tensor2tensor/blob/master/docs/new_problem.md).
+
+## Deployment
+Refer to this [repo](https://github.com/larycoder/chatbots) for deployment
