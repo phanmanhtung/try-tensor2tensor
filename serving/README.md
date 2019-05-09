@@ -90,7 +90,7 @@ def translatorAI(String):
   return result
 
 if __name__ == '__main__':
-  transltorAI("Hello world")
+  translatorAI("Hello world")
 
 - Run telegram again and see how it works! Good luck!
 python chatbot.py
