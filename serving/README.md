@@ -73,7 +73,7 @@ And we completed serving, now time to deploy to telegram
 - Full script: _Translator.py_:
 
 import os
-def transltorAI(String):
+def translatorAI(String):
 
   batcmd="t2t-query-server \
   --server=localhost:9000 \
