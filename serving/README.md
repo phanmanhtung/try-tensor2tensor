@@ -2,6 +2,7 @@
 Tensor2Tensor and the TensorFlow ecosystem make it easy to serve a model once trained.
 
 These commands will be run in your TERMINAL; so be prepared for the dependencies and the 10000-step trained model inside your laptop
+
 Also you need to have the first telegram version; because we will deploy to telegram
 
 ## 1. Export for Serving
@@ -28,6 +29,7 @@ sudo apt-get upgrade tensorflow-model-server
 - Start the server pointing at the export:
 
 Run "&> translator_log &" at the same time with the "tensorflow_model_server" to create a file called "translator_log"
+
 Be careful to provide correct model_base_path
 
 tensorflow_model_server \
@@ -41,6 +43,7 @@ Some notes here!
 - tensor2tensor will run the highest version among these servings (You can rename it "1" or "2" if you want)
 
 Now, enter _ls_ in terminal, you should see a file named "translator_log"
+
 Use "vim translator_log" command to start the server
 
 - Reference: (link)[https://www.youtube.com/watch?v=KoJmg18EN_w]
@@ -60,6 +63,7 @@ t2t-query-server \
   --inputs_once='Some random string here'
 
 get rid of "inputs_once" for the interactive environment
+
 And we completed serving, now time to deploy to telegram
 
 ## 4. Deploy to telegram
