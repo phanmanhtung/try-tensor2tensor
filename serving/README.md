@@ -19,7 +19,9 @@ t2t-exporter \
 Firstly, install the _tensorflow-model-server_
 - Enter these command via terminal:
 wget 'http://storage.googleapis.com/tensorflow-serving-apt/pool/tensorflow-model-server/t/tensorflow-model-server/tensorflow-model-server_1.3.0_all.deb'
+
 sudo dpkg -i tensorflow-model-server_1.3.0_all.deb
+
 sudo apt-get upgrade tensorflow-model-server
 
 - Start the server pointing at the export:
