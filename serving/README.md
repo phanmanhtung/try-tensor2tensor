@@ -46,7 +46,7 @@ Now, enter _ls_ in terminal, you should see a file named "translator_log"
 
 Use "vim translator_log" command to start the server
 
-- Reference: (link)[https://www.youtube.com/watch?v=KoJmg18EN_w]
+- Reference: [link](https://www.youtube.com/watch?v=KoJmg18EN_w)
 
 ## 3. Query the Server
 - Note: The t2t-query-server is meant only as an example. You may need to modify it to suit your needs. The exported model expects an input example that is structured identically to what would be found on disk during training (serialized tf.train.Example). For text problems, that means that it expects the inputs to already be encoded as integers. You can see how the t2t-query-server does this by reading the code.
