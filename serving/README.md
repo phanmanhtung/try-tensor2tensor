@@ -4,7 +4,7 @@ Tensor2Tensor and the TensorFlow ecosystem make it easy to serve a model once tr
 These commands will be run in your TERMINAL; so be prepared for the dependencies and the 10000-step trained model inside your laptop
 Also you need to have the first telegram version; because we will deploy to telegram
 
-#1. Export for Serving
+## 1. Export for Serving
 - First, export it for serving:
 
 t2t-exporter \
@@ -15,7 +15,7 @@ t2t-exporter \
   --output_dir=t2t/train
 - Don't just copy-paste, you need your correct directory names 
 
-#2. Launch a Server
+## 2. Launch a Server
 Firstly, install the _tensorflow-model-server_
 - Enter these command via terminal:
 wget 'http://storage.googleapis.com/tensorflow-serving-apt/pool/tensorflow-model-server/t/tensorflow-model-server/tensorflow-model-server_1.3.0_all.deb'
@@ -42,7 +42,7 @@ Use "vim translator_log" command to start the server
 
 - Reference: (link)[https://www.youtube.com/watch?v=KoJmg18EN_w]
 
-#3. Query the Server
+## 3. Query the Server
 - Note: The t2t-query-server is meant only as an example. You may need to modify it to suit your needs. The exported model expects an input example that is structured identically to what would be found on disk during training (serialized tf.train.Example). For text problems, that means that it expects the inputs to already be encoded as integers. You can see how the t2t-query-server does this by reading the code.
 
 Install some dependencies:
@@ -59,7 +59,7 @@ t2t-query-server \
 get rid of "inputs_once" for the interactive environment
 And we completed serving, now time to deploy to telegram
 
-#4. Deploy to telegram
+## 4. Deploy to telegram
 
 + Try to understand how the previous telegram program works -> all we need to do is change the funtion Translator(string) inside the Translator.py file
 
